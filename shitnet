@@ -1,0 +1,17 @@
+#!/bin/sh
+# The script is intended for Ubuntu hosts
+# The script assumes google.com is the destination host to check internet connectivity
+# sudo chmod 777 shitnet and move it to /bin/usr/
+# shitnet will become a command to run when facing connectivity issues
+
+HOST="google.com"
+
+ping -c 1 -w 5 $HOST > /dev/null
+
+if [ $? -ne 0 ] ; then
+
+   echo "$HOST is not reachable, RESTARTING !"
+   sudo systemctl restart networking
+else
+   echo "$HOST is reachable"
+fi
