@@ -1,6 +1,6 @@
 # Shitnet
 
-### The script is intended for Ubuntu hosts on VirtualBox, internet connectivity is unstable, running this script comes in handy sometimes
+### The script is intended for Ubuntu hosts on VirtualBox, when internet connectivity is unstable, running this script comes in handy sometimes
 
 
 The script assumes google.com is the destination host to check internet connectivity
